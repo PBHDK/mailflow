@@ -1,0 +1,8 @@
+#!/bin/bash
+
+python3 install.py
+codesign -f -s - ~/Library/Mail/Bundles/MailFlow.mailbundle
+spctl --add --label MailFlow ~/Library/Mail/Bundles/MailFlow.mailbundle
+spctl --enable --label MailFlow
+
+echo "Go to Mail Preferences -> General -> Manage Plug-Ins -> Enable Mailflow"
