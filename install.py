@@ -58,7 +58,7 @@ setup(
                 'Supported%sPluginCompatibilityUUIDs' % version:
                     compatibility_uuids
             },
-            'semi_standalone': True,
+            'semi_standalone': False,
             'strip': False
         }
     },
